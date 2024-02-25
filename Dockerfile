@@ -28,7 +28,7 @@ RUN apk --no-cache add ca-certificates tzdata
 COPY --from=builder /coze-discord-proxy .
 
 # 暴露端口
-EXPOSE 7077
+EXPOSE 80
 # 工作目录
 WORKDIR /app/coze-discord-proxy/data
 # 设置入口命令
